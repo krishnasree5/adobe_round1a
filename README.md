@@ -61,11 +61,7 @@ Use the following Docker command to execute the solution (matches the "Expected 
 #### Git Bash (Linux-like):
 
 ```bash
-docker run --rm \
-  -v "/c/Users/YourName/Desktop/project/input:/app/input" \
-  -v "/c/Users/YourName/Desktop/project/output:/app/output" \
-  --network none \
-  adobe_round1a:krish2025
+docker run --rm -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" --network none adobe_round1a:krish2025
 ```
 
 #### PowerShell:
